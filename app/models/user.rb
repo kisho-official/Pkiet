@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   require 'bcrypt'
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :email, :password, :password_confirmation, :role
   attr_accessor :password
 
   before_save :encrypt_password
@@ -9,6 +9,18 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
+  
+  #def role_symbols
+    #["Admin", "Student"].map do |role|
+      #role.underscore.to_sym
+    #end
+  #end  
+def role_symbols
+    roles_to_array.map {|r| r.to_sym}
+  end
+    def roles_to_array
+    (role || "").split("|")
+  end
 
   def self.authenticate(email, password)
     user = find_by_email(email)

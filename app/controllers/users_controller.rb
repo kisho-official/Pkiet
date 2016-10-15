@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-
+filter_access_to :all
   def index
-    @user = User.all
+   @user = User.all
   end
 
   def new
-    @user = User.new
+ @user = User.new
   end
 
   def create
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+   @user = User.find(params[:id])
   end
 
   def edit
