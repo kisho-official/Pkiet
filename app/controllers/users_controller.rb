@@ -11,6 +11,7 @@ filter_access_to :all
   def create
     @user = User.new(params[:user])    
     if @user.save
+      UserMailer.registration_confirmation(@user).deliver
       redirect_to root_url, :notice => 'User was successfully created.'
     else
       render :action => "new"

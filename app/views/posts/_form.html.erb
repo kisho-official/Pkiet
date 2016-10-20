@@ -1,0 +1,19 @@
+<%= form_for @post do |f| %>
+<%  if @post.errors.any? %>
+  <p><%=pluralize(@post.errors.count, "error")%> are preventing this post to be saved</p>
+  <ul>
+    <%  @post.errors.full_messages.each do |msg| %>
+    <li><%=msg %></li> 
+  </ul>
+  <%end%>
+  <%end%>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p class="button"><%= f.submit %></p>
+<% end %>

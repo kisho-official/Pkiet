@@ -1,0 +1,8 @@
+<p><%= comment.name %> </p>
+<p><%= comment.comment %> </p>
+<p><%= time_ago_in_words(comment.created_at) %> Ago </p>
+<%  if(@cur_user.email == comment.user_email)%> 
+<%= link_to 'Destroy', [comment.post, comment] , method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>
+
+

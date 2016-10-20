@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kisho/Documents/Rails/placement/config/authorization_rules.rb</file>
-            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/controllers/users_controller.rb</file>
-            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/views/users/_form.html.erb</file>
-            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/controllers/application_controller.rb</file>
-            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/models/user.rb</file>
+            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/assets/stylesheets/sessions.css.scss</file>
+            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/views/layouts/application.html.erb</file>
+            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/views/sessions/new.html.erb</file>
+            <file>file:/C:/Users/Kisho/Documents/Rails/placement/app/assets/stylesheets/application.css</file>
         </group>
     </open-files>
 </project-private>

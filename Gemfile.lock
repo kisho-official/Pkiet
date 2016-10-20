@@ -39,7 +39,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.10.0)
+    coffee-script-source (1.8.0)
     declarative_authorization (0.5.7)
     erubis (2.7.0)
     execjs (2.6.0)
@@ -108,6 +108,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby
   coffee-rails (~> 3.2.1)
+  coffee-script-source (~> 1.8.0)
   declarative_authorization
   jquery-rails
   rails (= 3.2.17)
